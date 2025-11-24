@@ -171,6 +171,39 @@ tr:nth-child(even) {
   background-color: #005e2d;
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  /* Organiza os itens do menu em coluna e melhora a experiência em celulares */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .nav-links li {
+    margin-bottom: 0.5rem;
+  }
+  /* Permite que tabelas sejam roláveis horizontalmente em telas estreitas */
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+  /* Ajusta o logotipo para caber melhor na barra superior */
+  .logo img {
+    height: 70px;
+    margin-right: 0;
+  }
+  /* Ajusta a largura dos iframes de formulários para ocupar a tela toda */
+  .lead-section iframe {
+    width: 100% !important;
+  }
+}
+
 /* Seção Quem Somos */
 /* Página Quem Somos */
 .about {
